@@ -43,6 +43,15 @@ For the exploratory analysis:
 ![readme2](https://github.com/Dr-Schmoctor/sales-predictions/assets/124634764/4ea5a6e3-ffbb-4f84-8c86-e40128fe1b39)
 * We also analyze the volume of each item_type in our data set. This shows a significant skew towards Fruits and Vegetables, Snack Foods and Household for Item_Types.
 
+
+![top10features](https://github.com/Dr-Schmoctor/sales-predictions/assets/124634764/2c0c8e2b-fac3-4b86-b4ce-c13e2cb247ef)
+* this visual shows our top 10 features by impact on our ML model. This shows us our most impactful was Item MRP followed by Outlet Type - Grocery Store, Item Visibility, Item Weight, and Outlet Type - Supermarket 3.
+
+
+![top15largest](https://github.com/Dr-Schmoctor/sales-predictions/assets/124634764/b0c681a2-4926-49c1-b9cb-4c3c0b2091dd)
+* this visual shows our top 3 coefficiencts are Outlet Location Type Tier 2 followed by OUtlet Identifier - OUT049 and Outlet Loation Typer - Tier 3.
+
+
  ## Model
  Baseline:
  - Training Data
@@ -87,6 +96,10 @@ For the exploratory analysis:
 2. this model is also not underfit or overfit for our data. Compared to our first Random Forest model, which was overfit for our Training Data, this model shows a much closer R2 for both Training/Test and also has a similar RMSE on both.
 
 The RMSE was also the best on our Tuned Random Forest model. It was a smaller error than our Linear or Baseline model on the Test data.
+
+We recommend this model for use in the future.
+
+However, we also can use our visualizations to offer deaper insight. For one, we should look into opening onlh supermarket Type 1 going forward as these have the highest outlet sales among the store types, we should also look into why the stores opened in 1998 perform so poorly. Possibly we could close these stores and open new Supermarket type 1 with the supplies.
 
 ## Limitations and Next Steps:
 - It appears MRP is the most influential feature when impacting Projected Sales Price. It could be useful to expand our data and see if there are any other features that could impact this.
